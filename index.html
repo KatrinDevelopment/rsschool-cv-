@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="asserts/favicon.ico">
+  <title>cv</title>
+</head>
+<body>
+  <header class="header">
+    <div class="conteiner">
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code-example" class="nav-link">Code example</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-container">
+    <div class="main-container">
+      <section class="section" id="profile">
+        <h1 class="section-profile">Katrin Sakharova</h1>
+        <h2 class="section-title">Java Script and Python Developer</h2>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Image:</h2>
+        <img src="./assets/img/avatar.jpg" alt="avatar" height=200>
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contacts:</h2>
+        <ul class="section-item">
+          <li>Location: Moscow, Russia</li>
+          <li>Telegram: @Katriyi</li>
+          <li>Discord: katrin_development</li>
+          <li>GitHub: KatrinDevelopment</li>
+        </ul>
+      </section>
+      <section class="section" id="summary">
+        <h2 class="section-title">Summary:</h2>
+        <p>I have a law degree and worked for many years as a corporate lawyer. 
+          <br>In 2022 I moved to the IT department and expand my backend and 
+          frontend stack.
+        </p>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title">Skills:</h2>
+        <ul>
+          <li>Python</li>
+          <li>Django</li>
+          <li>REST API</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      <section class="section" id="code-example">
+        <h2 class="section-title">Code Example:</h2>
+        <code>
+          def get_api_answer(
+          timestamp: int,
+       ) -> Dict[str, Union[List[Dict[str, str]], int]]:
+          <br>"""Makes a request to API."""
+          <br>try:
+              response = requests.get(
+                  ENDPOINT,
+                  headers=HEADERS,
+                  params={
+                      'from_date': timestamp,
+                  },
+              )
+          <br>except requests.exceptions.RequestException as error:
+              <br>logger.error(
+                  EndpointException(),
+                  exc_info=True,
+              )
+              <br>raise ConnectionError(error)
+        </code>
+      </section>
+      <section class="section" id="experience">
+        <h2 class="section-title">Experience:</h2>
+        <ul>
+          <li><b>Хpractice</b>, junior developer (python backend on Django, API)</li>
+          <li><b>Ceremonies Staging Agency</b>, lawyer (legal issues of the Olympic Games 
+            opening ceremony)</li>
+          <li><b>International company Nissan</b>, lawyer (contracts, verification of car 
+            dealers, promotional materials)</li>
+        </ul>
+      </section>
+      <section class="section" id="projects">
+        <h2 class="section-title">Projects:</h2>
+        <ul>          
+          <li><a href="http://www.ilsa.org/about-jessup">Jessup moot court Competition(USA, Washington)</a></li>
+          <li><a href="https://github.com/KatrinDevelopment/foodgram-project-react">Recipe social network on REST API</a></li>
+        </ul>
+      </section>
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <ul>
+          <li>Russian Academy of Justice, lawyer</li>
+          <li>Manchester University, cultural project manager</li>
+        </ul>
+      </section>
+      <section class="section" id="english">
+        <h2 class="section-title">English</h2>
+        <p>Upper-Intermediate (B2)</p>
+      </section>
+    </div>
+  </main>
+  <footer class="header">
+    <div class="conteiner">
+      <ul class="nav-list">
+        <li>2023</li>
+        <li>
+          <a href="https://github.com/KatrinDevelopment" class="nav-link">Github Katrin Sakharova</a>
+        </li>
+        <li>
+          <a href="https://rs.school/js/">
+            <img src="https://rs.school/images/rs_school_js.svg" alt="RS School" height="50">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
