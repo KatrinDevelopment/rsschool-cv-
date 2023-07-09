@@ -15,7 +15,7 @@ body {
 
 .container {
   max-width: 1440px;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 html {
@@ -107,4 +107,3 @@ code {
   font-size: 14px;
   color: #333;
 }
-
